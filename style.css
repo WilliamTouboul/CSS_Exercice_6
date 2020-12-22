@@ -1,0 +1,38 @@
+header {
+    background-color: blueviolet;
+    height : 12em;;
+}
+#subtitle{
+    font-style: italic;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color : rgb(63, 19, 104);
+    border-top: solid black 1px;
+    text-decoration : none;
+}
+.nav-link, .navbar-brand {
+    color : black;
+}
+.nav-link:hover{
+    color : white;
+}
+.navbar-brand:hover{
+    color : white;
+}
+
+/* Couleur jumbotron */
+.jumbotron {
+    background-color: rgba(137, 43, 226, 0.582);
+    margin-bottom: 15px;
+}
+.badge{
+    background-color :red;
+}
+footer {
+    text-align: center;
+}
+.button-jumbotron {
+    margin-bottom : 15px;
+}
