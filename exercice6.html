@@ -14,38 +14,47 @@
         <!-- Banniére -->
         <header>
             <h1>Test Bootstrap, c'est vraiment pas le titre le plus inspiré de l'année.</h1>
-            <hr>
+            <hr id="hrHeader">
             <p id="subtitle">Sous-titre de test bootstrap.</p>
+            <a href="https://getbootstrap.com/" alt="lien bootstrap" target="_blank">
+                <img id="logoBootstrap"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
+                    alt="logo bootstrap" name="logo bootstrap"></img>
+            </a>
         </header>
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a id="home" class="navbar-brand" href="#">Acceuil</a>
+            <!-- Reglage du bouton quand l'affichage se réduit -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Element de la NavBar dans une div pour le collapse, si besoin-->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Lien 1</a>
+                        <a class="nav-link" href="#lorem">Lorem</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Lien 2</a>
+                        <a class="nav-link" href="#donec">Donec...</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Lien 3</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Lien 4</a>
-                          <a class="dropdown-item" href="#">Lien 5</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Lien 6</a>
+                            <a class="dropdown-item" href="#">Lien 4</a>
+                            <a class="dropdown-item" href="#">Lien 5</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#footer">pied de page</a>
                         </div>
-                      </li>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Lien pas fini</a>
                     </li>
@@ -56,12 +65,13 @@
         <div class="jumbotron jumbotron-fluid">
             <!-- la seconde div sert a la fluidité, le Jumbotron prendra toute la page -->
             <div class="container">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                    attention to featured content or information.</p>
+                <h1 class="display-4">Le bootstrap, c'est génial</h1>
+                <p class="lead">Ceci est un superbe jumbotron, parce que je peux. </p>
+                <p id="jbtron-2">On test plein de choses. </p>
+                <p id="jbtron-3"> et on va tester ca aussi. </p>
                 <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.
-                </p>
+                <p >Et en plus y'as rien a faire, c'est beau la technologie quand même...</p>
+
                 <p class="lead">
                     <a class="btn btn-dark btn-lg button-jumbotron" href="#" role="button">Learn more</a>
                 </p>
@@ -69,7 +79,7 @@
         </div>
         <hr>
 
-        <h2>Lorem ipsum dolor <span class="badge ">Danger</span></h2>
+        <h2 id="lorem" >Lorem ipsum dolor <span class="badge ">Danger</span></h2>
 
         <h3>sagittis metus porta</h3>
         <p>
@@ -130,8 +140,9 @@
             Vestibulum ultrices ullamcorper turpis. Pellentesque eros tortor, luctus at feugiat cursus, tristique et
             orci. Praesent vel nisi sem.</p>
 
+            <h3 id="donec"> Donec... </h3>
         <p>
-            Donec eget tincidunt urna. Curabitur pharetra sapien ut lorem volutpat, quis semper urna blandit. Nullam
+            eget tincidunt urna. Curabitur pharetra sapien ut lorem volutpat, quis semper urna blandit. Nullam
             rhoncus pellentesque condimentum. Integer feugiat, ante et ullamcorper ornare, sapien metus sollicitudin
             erat, at egestas metus turpis et felis. Nulla facilisi. Etiam sed molestie est. Curabitur aliquam nunc sit
             amet nunc tincidunt elementum. Praesent dictum vulputate neque, eget imperdiet diam. Integer eu ultrices
@@ -168,13 +179,15 @@
             at enim consectetur, congue commodo leo. Nulla sed odio eget ipsum laoreet condimentum ut at enim. In non
             odio fermentum, sodales enim id, ullamcorper dolor. Proin eget massa in metus consequat mollis.
         </p>
-        <p> Suspendisse ultrices id purus gravida sagittis. In et elit eu nunc vestibulum porttitor a eget eros.
+        <p> <img id="bootstrapIllustration-p3" src="https://icons.getbootstrap.com/assets/img/icons-hero.png" alt="illustration bootstrap">
+            Suspendisse ultrices id purus gravida sagittis. In et elit eu nunc vestibulum porttitor a eget eros.
             Pellentesque nec accumsan nibh, vel lacinia mi. Suspendisse sit amet lacinia neque. Maecenas mi risus,
             malesuada at elit quis, laoreet consequat sem. Donec dui urna, vestibulum sit amet urna id, mattis commodo
             sapien. Aenean posuere nunc id justo eleifend varius. Morbi sed mi sapien. Cras in imperdiet leo. Nam
             commodo egestas ante. Donec scelerisque, diam finibus dignissim cursus, lorem nunc auctor tellus, sit amet
             facilisis ex purus at ligula. Aliquam diam urna, efficitur vehicula nibh at, iaculis sollicitudin erat. In
             iaculis, risus at accumsan malesuada, nunc ex mollis magna, vitae dignissim lacus ipsum vel ipsum.</p>
+            
 
         <p> Proin placerat lectus id eros bibendum accumsan. Mauris varius libero id mauris euismod vestibulum.
             Suspendisse sagittis ligula tellus, sit amet euismod metus convallis a. Etiam auctor orci mi, at pharetra
@@ -185,9 +198,9 @@
             lorem eget eros porta sodales. Donec dolor metus, suscipit id ultrices ut, euismod sit amet erat. Etiam a
             massa sed ante iaculis vehicula at quis augue. Phasellus eu fringilla quam. Suspendisse euismod mollis metus
             imperdiet viverra.</p>
-
-            <h3>Nullam gravida sagittis ultrices. <span class="badge">NOUVEAU</span></h3>
-        <p>  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+<hr id="hrEnd">
+        <h3>Nullam gravida sagittis ultrices. <span class="badge">NOUVEAU</span></h3>
+        <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
             cubilia curae; Quisque rhoncus consectetur risus, vel euismod nisi faucibus a. Sed ac justo pellentesque,
             dapibus lectus id, vestibulum odio. Etiam a volutpat felis, non luctus purus. Maecenas ac purus vel enim
             vehicula dapibus sit amet et metus. Nulla et tincidunt purus, ut cursus eros. Nunc sed mauris eu risus
@@ -196,16 +209,22 @@
             pellentesque. Nam id augue at metus pellentesque sollicitudin vel sed turpis.</p>
         </p>
         <hr>
-        <footer>
+        <footer id="footer">
             &copy; copyright, machin machin
             <div>
                 <a href="#">Support</a> <a href="#">Nous contacter</a> <a href="#">Twitter</a>
             </div>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 
     </body>
 

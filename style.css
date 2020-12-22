@@ -1,14 +1,40 @@
+body {
+    font-family: Georgia, serif;
+}
 header {
-    background-color: blueviolet;
-    height : 12em;;
+    text-align: center;
+    background-color :rgb(63, 60, 59);
+    color : rgb(168, 153, 125);
+    height : 12em;
+
 }
 #subtitle{
     font-style: italic;
+
 }
+#logoBootstrap{
+    max-width : 40px;
+    height: auto;
+}
+
+#bootstrapIllustration-p3 {
+    float : right;
+}
+
+#hrHeader{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#hrEnd {
+    height : 1em;
+    color :rgba(137, 43, 226, 0.582);
+}
+
 
 /* Navbar */
 .navbar-custom {
-    background-color : rgb(63, 19, 104);
+    background-color : #DF4655;
     border-top: solid black 1px;
     text-decoration : none;
 }
@@ -27,12 +53,21 @@ header {
     background-color: rgba(137, 43, 226, 0.582);
     margin-bottom: 15px;
 }
+.button-jumbotron {
+    margin-bottom : 1.5em;
+}
+#jbtron-2 {
+    text-align: center;
+}
+#jbtron-3 {
+    text-align:right;
+}
+
+
+
 .badge{
     background-color :red;
 }
 footer {
     text-align: center;
-}
-.button-jumbotron {
-    margin-bottom : 15px;
 }
