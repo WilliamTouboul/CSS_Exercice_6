@@ -1,5 +1,9 @@
-body {
+body, html {
     font-family: Georgia, serif;
+    height : 100%;
+    background-color :rgb(63, 60, 59);
+    color : white;
+
 }
 header {
     text-align: center;
@@ -8,6 +12,31 @@ header {
     height : 12em;
 
 }
+
+.parallax, .parallax-2 {
+    /* The image used */
+    
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax {
+    background-image: url("https://wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper-4.png");
+  }
+  .parallax-2 {
+      background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper-24.jpg');
+  }
+
+
+
+
 #subtitle{
     font-style: italic;
 
