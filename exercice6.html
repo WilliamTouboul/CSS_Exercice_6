@@ -74,10 +74,49 @@
                 <p>Et en plus y'as rien a faire, c'est beau la technologie quand même...</p>
 
                 <p class="lead">
-                    <a class="btn btn-dark btn-lg button-jumbotron" href="#" role="button">Learn more</a>
+                    <!-- Bouton modal -->
+                    <button type="button" class="btn btn-danger mb-3 " data-toggle="modal" data-target="#exampleModal">
+                        Plus d'informations
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade modalCSS" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Plus d'informations...</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Plein d'infos oulala :
+                                    <ul>
+                                        <li>
+                                            info 1
+                                        </li>
+                                        <li>
+                                            info 2
+                                        </li>
+                                        <li>
+                                            info 3
+                                        </li>
+                                    </ul>
+                                    C'etait plein d'infos !
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    <button type="button" class="btn btn-primary">J'ai compris !</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </p>
             </div>
         </div>
+        <!-- Fin jumbotron -->
         <hr>
         <div class="parallax">
             <h2 id="lorem">Lorem ipsum dolor <span class="badge ">Danger</span></h2>
@@ -90,6 +129,7 @@
                 ultrices. Praesent rutrum magna nec erat scelerisque, nec semper quam semper. Proin lobortis arcu vitae
                 varius eleifend. In sed justo augue.
             </p>
+
             <p> Morbi eu laoreet ex. Proin congue quam dui, volutpat efficitur neque placerat ac. Duis a est nisl.
                 Suspendisse finibus a elit eu fringilla. Praesent tempor sed ex ut accumsan. Nam sollicitudin efficitur
                 mollis. Phasellus convallis turpis ac nunc luctus lobortis. Proin vel sem non diam fermentum aliquet vel
@@ -196,7 +236,7 @@
                 Nunc
                 ut volutpat elit, id condimentum mi. Ut malesuada congue erat, eu pharetra velit.
             </p>
-            
+
             <p>
                 Praesent pellentesque nisi ac molestie vestibulum. Etiam nunc felis, cursus eu nunc non, hendrerit
                 consequat

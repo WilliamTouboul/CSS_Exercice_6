@@ -12,7 +12,9 @@ header {
     height : 12em;
 
 }
-
+.modalCSS {
+    color : black;
+}
 .parallax, .parallax-2 {
     /* The image used */
     
